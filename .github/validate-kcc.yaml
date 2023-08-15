@@ -1,0 +1,16 @@
+name: validate-kcc
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  test:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: check manifests
+        uses: hermanbanken/kubeconform-action@v1
