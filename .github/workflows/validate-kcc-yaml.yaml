@@ -15,7 +15,6 @@ jobs:
       - name: check manifests
         uses: hermanbanken/kubeconform-action@v1
         with:
-          options: |
-            -output
-            json
-            dns-records/
+          args: |- 
+            -output json
+            dns-records
