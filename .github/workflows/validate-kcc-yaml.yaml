@@ -15,5 +15,5 @@ jobs:
       - name: check manifests
         uses: hermanbanken/kubeconform-action@v1
         with:
-          options: ["-output", "json", "fixtures/invalid.yaml"]
+          options: ["-output", "json"]
           
