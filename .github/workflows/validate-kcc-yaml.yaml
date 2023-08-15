@@ -17,4 +17,4 @@ jobs:
         with:
           args: |- 
             -output json
-            dns-records
+            dns-records/
